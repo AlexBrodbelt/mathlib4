@@ -1,3 +1,8 @@
+/-
+Copyright (c) 2024 Alex Brodbelt. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Alex Brodbelt
+-/
 import Mathlib.Algebra.BigOperators.Group.Finset
 import Mathlib.Algebra.Order.Field.Basic
 import Mathlib.Data.NNReal.Basic
@@ -8,7 +13,21 @@ import Mathlib.Data.Matrix.Basic
 
 open Real BigOperators Finset RealInnerProductSpace Matrix
 
-/-
+
+/-!
+# IMO 1982 Q3
+
+Consider infinite sequences $\{x_n \}$ of positive reals such that $x_0 = 0$ and
+$x_0 \geq x_1 \geq x_2 \geq ...$
+
+a) Prove that for every such sequence there is an $n \geq 1$ such that:
+
+$\frac{x_0^2}{x_1} + \ldots + \frac{x_{n-1}^2}{x_n} \geq 3.999$
+
+b) Find such a sequence such that for all n:
+
+$\frac{x_0^2}{x_1} + \ldots + \frac{x_{n-1}^2}{x_n} < 4$
+
 The solution is based on the one at the
 [Art of Problem Solving](https://artofproblemsolving.com/wiki/index.php/1982_IMO_Problems/Problem_3)
 website.
